@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Pochacco 官网</title>
+</head>
+<style>
+.container {
+            width: 1000px;
+            height: 2000px;
+            margin: 0 auto; /* 居中 */
+        }    
+
+
+.topblank {
+position: relative;
+height: 300px;
+width: 1000px;
+background-image: url("./images/b1.jpg");
+background-color: black; /* 备用背景色 */
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+.login-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.login-box input {
+  display: block;
+  width: 150px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+nav {
+      background-color: #dbdad4;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      width: 20%;
+      border-right: 1px solid #a9a7a7;
+      text-align: center;
+    }
+
+    nav ul li:last-child {
+      border-right: none;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+    }
+.info-table-section {
+  display: flex;
+  padding: 20px;
+  border: 2px solid #666; /* 添加外边框，2px 宽的实线，颜色为深灰色 */
+}
+.info-table-section table {
+  width: 70%;
+  border-collapse: collapse;
+}
+.info-table-section table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+.table-image {
+  width: 30%;
+  height: auto;
+  margin: 0 2px 0px 20px;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+
+
+.r-section {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+
+
+.achievements-container {
+  display: flex;
+  padding: 20px;
+  
+  
+}
+
+.hobby-skill-section,
+.footprint-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.hobby-skill-section h2,
+.footprint-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hobby-skill-section ul,
+.footprint-section ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.hobby-skill-section ul li,
+.footprint-section ul li {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #cfcec7;
+  text-align: center;
+  padding: 75px;;
+  height: 150px; 
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+
+</style>
+<body>
+   
+<div class="container">
+  <!-- 顶部横幅 -->
+  <div class="topblank">
+    <div class="login-box">
+      <input type="text" placeholder="用户名">
+      <input type="password" placeholder="密码">
+      <button type="submit">登录</button>
+    </div>
+ </div>
+
+  <!-- 导航栏 -->
+  <nav>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">在校经历</a></li>
+      <li><a href="#">科研成果</a></li>
+      <li><a href="#">学生工作</a></li>
+      <li><a href="#">留言板</a></li>
+    </ul>
+  </nav>
+  
+    <div class="info-table-section">
+        <table border="1">
+          <tr>
+            <td>姓名</td>
+            <td>郝震宇</td>
+            <td>性别</td>
+            <td>男</td>
+          </tr>
+          <tr>
+            <td>籍贯</td>
+            <td>山西</td>
+            <td>出生年月</td>
+            <td>2005.11</td>
+          </tr>
+          <tr>
+            <td>身高</td>
+            <td>185cm</td>
+            <td>体重</td>
+            <td>70kg</td>
+          </tr>
+          <tr>
+            <td>毕业学校</td>
+            <td>北京交通大学</td>
+            <td>专业</td>
+            <td>电子商务</td>
+          </tr>
+          <tr>
+            <td>爱好</td>
+            <td colspan="3">踢足球 冲浪 </td>
+          </tr>
+        </table>
+        <img src="./images/WIN_20230820_17_50_07_Pro.jpg" alt="装饰图片" class="table-image">
+    </div>
+  
+    <main>
+    
+    <section class="r-section">
+      <!-- 介绍部分 -->
+      <article>
+        <h2>学生简介</h2>
+        <p> &emsp;&emsp;我叫郝震宇，是北京交通大学电子商务专业的一名大学生</p>
+        <p> &emsp;&emsp;在学习上，我认真听讲、积极思考，课后主动完成作业，成绩较为优异。也时常参与小组讨论，锻炼自己解决问题的能力。生活里，我爱运动，常去操场跑步、打球，身体素质很棒。还喜欢参加社团活动，结交了不少好朋友，大家一起度过了许多快乐时光</p>
+        <p> &emsp;&emsp;展望未来，我希望能在专业领域继续深造，深入钻研感兴趣的方向，不断提升专业水平。我也期待能进入相关行业的优秀企业实习工作，将所学知识运用到实际中，为企业发展贡献力量。我相信，凭借在大学期间积累的知识、培养的能力和积极的心态，我定能在未来的道路上不断前行，实现自己的人生价值。
+        </p>
+      </article>
+
+    </section>
+  </main>
+  <div class="achievements-container">
+    <!-- 爱好与特长部分 -->
+    <div class="hobby-skill-section">
+      <h2>未来就业</h2>
+      <ul>
+        <li>前后端工程师：JAVA、Python；</li>
+        <li>数据分析师；</li>
+        <li>产品经理；</li>
+        <li>算法工程师；</li>
+        <li>公务员；</li>
+      </ul>
+    </div>
+  
+    <!-- 我的成就 -->
+    <div class="footprint-section">
+      <h2>我的成就</h2>
+      <ul>
+        <li>2019年全国大学生英语口语大赛一等奖；</li>
+        <li>2019年全国大学生英语口语大赛一等奖；</li>
+        <li>2019年全国大学生英语口语大赛一等奖；</li>
+        <li>2019年全国大学生英语口语大赛一等奖；</li>
+      </ul>
+    </div>
+  </div>
+  <!-- 页脚 -->
+  <footer>
+    
+    <p>大鹏一日同风起，扶摇而上九万里</p>
+</footer>
+</div>
+</body>
+
+</html>
